@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cell_main_activity"
+    >
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="10dp"
+        android:background="@drawable/view_drag_up_down"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/TvBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill"
+        android:textColor="#616A6A"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <EditText
+        android:id="@+id/EtBillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/TvBill"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/cell_edit_text"
+        android:drawableStart="@drawable/ic_euro"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:hint="000.00 "
+
+        android:inputType="numberDecimal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:pointerIcon="arrow"
+        android:textAlignment="textEnd"
+        android:textColor="#084645"
+        android:textColorHint="#A3BCBB"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/TvTipPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EtBillAmount"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:text="Select tip %"
+        android:textColor="#616A6A"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/TvTipPercentage"
+        >
+
+        <LinearLayout
+            android:id="@+id/LL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/Btn5Percent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_tip_percentage"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="5%"
+
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:textColor="#ffffff"
+                />
+            <Button
+                android:id="@+id/Btn10Percent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_tip_percentage"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="10%"
+                android:textAlignment="center"
+
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@id/LL1"
+
+            >
+            <Button
+                android:id="@+id/Btn15Percent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_tip_percentage"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="15%"
+                android:textAlignment="center"
+
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:textColor="#ffffff"
+                />
+            <Button
+                android:id="@+id/Btn25Percent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_tip_percentage"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="25%"
+                android:textAlignment="center"
+
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@id/LL2"
+            >
+            <Button
+                android:id="@+id/Btn50Percent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_tip_percentage"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="50%"
+                android:textAlignment="center"
+
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:textColor="#ffffff"
+                />
+            <Button
+                android:id="@+id/BtnCustom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_custom"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="Custom"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:textColor="#65817E"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RL1"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+    <TextView
+        android:id="@+id/TvNumberPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:text="Number of people"
+        android:textColor="#616A6A"
+        android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/EtPeopleAmount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/TvNumberPeople"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/cell_edit_text"
+                android:drawableStart="@drawable/ic_person"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:hint="000 "
+                android:inputType="number"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:pointerIcon="arrow"
+                android:textAlignment="textEnd"
+                android:textColor="#084645"
+                android:textColorHint="#A3BCBB"
+                android:textSize="24sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/RL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EtPeopleAmount"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/cell_amounts">
+
+        <TextView
+            android:id="@+id/TvTipAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:text="Tip amount"
+            android:textColor="#F2FFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/TvPerPerson1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TvTipAmount"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:text="/ person"
+            android:textColor="#62929E"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/TvAmountOfTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:text="€00.00"
+            android:textColor="#26C2AD"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/TvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TvPerPerson1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:text="Total"
+            android:textColor="#F2FFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/TvPerPerson2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TvTotal"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:text="/ person"
+            android:textColor="#62929E"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/TvAmountPerPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TvPerPerson1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:text="€00.00"
+            android:textColor="#26C2AD"
+            android:textSize="32sp" />
+
+
+    </RelativeLayout>
+
+            <Button
+                android:id="@+id/BtnReset"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/RL2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_tip_percentage"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:text="Reset"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#26C2AD"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
